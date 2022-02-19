@@ -1,0 +1,143 @@
+<html cvd="1">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<title>Poke Effective</title>	
+
+	<!-- CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	
+	<link rel="stylesheet" href="src/faanimated.css">
+	
+	<link rel="stylesheet" href="src/styles.css">
+	<script src="src/functions.js"></script>		
+	<script src="src/database.js"></script>		
+
+<!-- END WAYBACK TOOLBAR INSERT -->				
+
+</head>
+<body>
+		<div id="search-container">
+			<input id="poke-search" placeholder="Search">
+			<div id="poke-search-sign"><i class="fa fa-search"></i></div>	
+			
+		</div>
+		
+		
+		
+		<div id="selector-type" class="container"></div>
+		<div id="effective" class="container"></div>
+		<div id="pokemon-info" class="container">	
+			<div class="pokemon">
+				<div class="number"></div>				
+				<div class="image-container">
+					<img class="image">
+				</div>
+				<div class="name"></div>
+			</div>	
+		</div>
+		<div id="selector-pokemon" class="container">
+					
+		<div id="pokemon-original" class="pokemon">
+				<div class="number"></div>				
+				<div class="image-container">
+					<img class="image">
+				</div>
+				<div class="poke-info-container">
+					<p class="name"></p>
+					<p class="type-1"></p>
+					<p class="type-2"></p>
+				</div>	
+				<div class="defenses"></div>
+				<i class="fa fa-chevron-right selection"></i>
+			</div>
+			
+		
+		<div class="result">
+			<div id="pokemon-result">
+		
+				<i class="fa fa-times selection selection-back"></i>
+				<div class="number"></div>				
+				<div class="image-container">
+					<img class="image">
+				</div>
+				<div class="poke-info-container">
+					<p class="name"></p>
+					<p class="type-1"></p>
+					<p class="type-2"></p>
+				</div>					
+				<div class="defenses"></div>
+				<table id="stats-table">
+					<thead>
+						<tr>
+							<td>
+								HP
+							</td>	
+							<td>
+								ATK
+							</td>	
+							<td>
+								DEF
+							</td>	
+							<td>
+								SpA
+							</td>	
+							<td>
+								SpD
+							</td>	
+							<td>
+								SPD
+							</td>					
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+							</td>	
+							<td>
+							</td>	
+							<td>
+							</td>	
+							<td>
+							</td>	
+							<td>
+							</td>	
+							<td>
+							</td>					
+						</tr>
+					</tbody>
+				</table>
+				<div class="msg">If you attack it with the following types, the damage multiplier will be:</div>
+				<div id="hyper" class="effective">
+					<p>Hyper Effective <b>x4</b></p>
+				</div>
+				<div id="super" class="effective">
+					<p>Super Effective <b>x2</b></p>
+				</div>
+				<div class="msg">Not listed attack types will deal <b>Normal Damage (1x)</b></div>
+				<div id="not-very" class="effective">
+					<p>Not Very Effective <b>x0.5</b></p>
+				</div>
+				<div id="almost" class="effective">
+					<p>Almost Not Effective <b>x0.25</b></p>
+				</div>
+				<div id="no-effect" class="effective">
+					<p>No Effect <b>x0</b></p>
+				</div>
+				
+			</div>
+		</div>
+		
+</body>
+</html>
